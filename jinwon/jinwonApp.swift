@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct jinwonApp: App {
+    @StateObject var store = MemoStore()
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
             MainListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(store)
         }
     }
 }
