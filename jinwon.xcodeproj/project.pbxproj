@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		4CCCAFFF29D1D74F00DFE179 /* jinwonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCAFFE29D1D74F00DFE179 /* jinwonApp.swift */; };
-		4CCCB00129D1D74F00DFE179 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCB00029D1D74F00DFE179 /* ContentView.swift */; };
 		4CCCB00329D1D75200DFE179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCCB00229D1D75200DFE179 /* Assets.xcassets */; };
 		4CCCB00629D1D75200DFE179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCCB00529D1D75200DFE179 /* Preview Assets.xcassets */; };
 		4CCCB00829D1D75200DFE179 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCB00729D1D75200DFE179 /* Persistence.swift */; };
 		4CCCB00B29D1D75200DFE179 /* jinwon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCB00929D1D75200DFE179 /* jinwon.xcdatamodeld */; };
+		4CCCB01229D1D82100DFE179 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCCB01129D1D82100DFE179 /* MainListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CCCAFFB29D1D74F00DFE179 /* jinwon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jinwon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCCAFFE29D1D74F00DFE179 /* jinwonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jinwonApp.swift; sourceTree = "<group>"; };
-		4CCCB00029D1D74F00DFE179 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4CCCB00229D1D75200DFE179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CCCB00529D1D75200DFE179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4CCCB00729D1D75200DFE179 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		4CCCB00A29D1D75200DFE179 /* jinwon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = jinwon.xcdatamodel; sourceTree = "<group>"; };
+		4CCCB01129D1D82100DFE179 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +55,11 @@
 		4CCCAFFD29D1D74F00DFE179 /* jinwon */ = {
 			isa = PBXGroup;
 			children = (
+				4CCCB01429D1D89100DFE179 /* Memory */,
+				4CCCB01329D1D86800DFE179 /* CoreData */,
 				4CCCAFFE29D1D74F00DFE179 /* jinwonApp.swift */,
-				4CCCB00029D1D74F00DFE179 /* ContentView.swift */,
+				4CCCB01129D1D82100DFE179 /* MainListView.swift */,
 				4CCCB00229D1D75200DFE179 /* Assets.xcassets */,
-				4CCCB00729D1D75200DFE179 /* Persistence.swift */,
-				4CCCB00929D1D75200DFE179 /* jinwon.xcdatamodeld */,
 				4CCCB00429D1D75200DFE179 /* Preview Content */,
 			);
 			path = jinwon;
@@ -71,6 +71,22 @@
 				4CCCB00529D1D75200DFE179 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4CCCB01329D1D86800DFE179 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4CCCB00729D1D75200DFE179 /* Persistence.swift */,
+				4CCCB00929D1D75200DFE179 /* jinwon.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		4CCCB01429D1D89100DFE179 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CCCB00B29D1D75200DFE179 /* jinwon.xcdatamodeld in Sources */,
+				4CCCB01229D1D82100DFE179 /* MainListView.swift in Sources */,
 				4CCCB00829D1D75200DFE179 /* Persistence.swift in Sources */,
-				4CCCB00129D1D74F00DFE179 /* ContentView.swift in Sources */,
 				4CCCAFFF29D1D74F00DFE179 /* jinwonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
